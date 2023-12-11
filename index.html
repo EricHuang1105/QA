@@ -10,17 +10,7 @@
     <button onclick="search()">Search</button>
     <p id="result"></p>
 
-    <script>
-        function search() {
-            var query = document.getElementById('query').value;
-            var url = 'https://script.google.com/macros/s/AKfycbx2Z-8BTfCvakRhJGneOKjrVAmeYhdnD9EIU77vPL1wzOwnyKTWhReCR0-MGcI_ZWie/exec?q=' + encodeURIComponent(query);
 
-            fetch(url)
-                .then(response => response.text())
-                .then(text => document.getElementById('result').innerText = text)
-                .catch(error => console.error('Error:', error));
-        }
-    </script>
 </body>
 </html>
 
